@@ -4,40 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Laravel with Bootstrap</title>
+    <title>Laravel + Bootswatch Cyborg</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <!-- Bootswatch Cyborg Theme CSS -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-cyborg.min.css') }}">
 </head>
 
 <body>
 
-    <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Theme Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
         <div class="container">
             <a class="navbar-brand" href="#">
-                ACT Laravel App
+                ACT Bootswatch App
             </a>
+
+            <span class="navbar-text">
+                Cyborg Theme Showcase
+            </span>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container my-5">
+    <div class="container my-4">
 
-        <div class="p-5 mb-4 bg-light rounded-3 border">
-            <div class="container-fluid py-3">
+        <!-- Theme Alert -->
+        <div class="alert alert-success">
+            <strong>Theme Active!</strong>
+            You have successfully integrated a custom Bootswatch theme into Laravel.
+        </div>
 
-                <h1 class="display-5 fw-bold text-primary">
-                    Bootstrap Successfully Integrated!
-                </h1>
+        <!-- Card Section -->
+        <div class="card border-primary mb-4">
 
-                <p class="col-md-8 fs-4">
-                    This Laravel application is now styled using local
-                    Bootstrap CSS and JS files located in the public directory.
+            <div class="card-header">
+                Bootswatch Integration Test
+            </div>
+
+            <div class="card-body">
+
+                <h4 class="card-title">
+                    Custom Typography & Button Styles
+                </h4>
+
+                <p class="card-text">
+                    Notice how the font family, button radii, and color accents
+                    match the Cyborg theme effortlessly.
                 </p>
 
-                <button class="btn btn-primary btn-lg" type="button">
-                    Test Button
+                <button class="btn btn-primary" type="button">
+                    Primary Button
+                </button>
+
+                <button class="btn btn-secondary" type="button">
+                    Secondary
+                </button>
+
+                <button class="btn btn-success" type="button">
+                    Success
                 </button>
 
             </div>
@@ -45,7 +68,7 @@
 
     </div>
 
-    <!-- Bootstrap JS Bundle -->
+    <!-- Mandatory Bootstrap JS Bundle from Part 1 -->
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 
 </body>
